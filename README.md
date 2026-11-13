@@ -116,6 +116,8 @@ The laptop app has the same remote, with volume keys, letter tiles for favorites
   <p align="center"><img src="docs/screenshots/desktop-mouse.png" alt="Mouse mode: click the small scrcpy window to drive the TV cursor" width="560"></p>
 
 - **Screen** (or **More › Show the TV screen**) opens scrcpy with the TV picture, to mirror it on the laptop.
+
+  <p align="center"><img src="docs/screenshots/desktop-screen.png" alt="Screen: the TV picture mirrored next to the remote" width="700"></p>
 - **Apps menu.** Right-click an app to pin or unpin it. Right-click the favorites bar, or use More › Add website tile, to add a site.
 
 ---
