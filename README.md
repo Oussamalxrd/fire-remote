@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  <a href="docs/screenshots/hero.png"><img src="docs/screenshots/hero.png" alt="Fire Remote on Android: touchpad, remote and settings" width="900"></a>
+  <a href="docs/screenshots/hero.png"><img src="docs/screenshots/hero.png" alt="Fire Remote on Android (touchpad, remote) and on Windows" width="900"></a>
 </p>
 
 Fire Remote talks to the Stick directly through Android's debugging bridge (ADB). It drives [scrcpy-server](https://github.com/Genymobile/scrcpy) on the TV with video turned off, so every key press arrives instantly. It can also plug a virtual mouse into the Stick, so websites and apps built for touch finally work with a cursor.
@@ -90,7 +90,9 @@ There are two apps, and you can use either or both:
 
 ### Laptop app
 
-The laptop app has the same remote, plus:
+<p align="center"><img src="docs/screenshots/desktop-main.png" alt="Windows app" width="250"> &nbsp; <img src="docs/screenshots/desktop-menu.png" alt="More menu" width="330"></p>
+
+The laptop app has the same remote, with volume keys, letter tiles for favorites and a compact window. It also adds:
 
 - **Keyboard control** when its window has focus:
 
@@ -109,7 +111,11 @@ The laptop app has the same remote, plus:
   | Ctrl+V | Paste text to the TV |
   | Ctrl+Alt+M | TV mouse on / off, from any window |
 
-- **More > Show the TV screen** opens scrcpy for full mirroring.
+- **Mouse mode.** Click **Mouse**, or press `Ctrl+Alt+M` from anywhere. A small scrcpy window opens. Click it to capture your mouse, which then moves the cursor on the TV. **Alt** releases it.
+
+  <p align="center"><img src="docs/screenshots/desktop-mouse.png" alt="Mouse mode: click the small scrcpy window to drive the TV cursor" width="560"></p>
+
+- **Screen** (or **More › Show the TV screen**) opens scrcpy with the TV picture, to mirror it on the laptop.
 - **Apps menu.** Right-click an app to pin or unpin it. Right-click the favorites bar, or use More › Add website tile, to add a site.
 
 ---
@@ -156,7 +162,7 @@ You're connected when the dot turns green. From here:
 1. Download [scrcpy](https://github.com/Genymobile/scrcpy/releases) (the `win64` zip) and unzip it, for example to `C:\scrcpy`.
 2. Download `FireRemote.exe` from [Releases](../../releases/latest) and put it **in the scrcpy folder**, next to `adb.exe` and `scrcpy-server`.
 3. Run it. Windows SmartScreen may warn about an unsigned app: choose **More info › Run anyway**.
-4. Type the TV's IP and press **Connect**, or use **More (⋯) › Find the TV on my hotspot**.
+4. Type the TV's IP and press **Connect**, or click the 🔍 button next to the address to find the TV on your hotspot.
 
 The app finds `adb.exe` by itself, remembers the last TV, and keeps its settings in `%APPDATA%\FireRemote`.
 
