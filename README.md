@@ -23,6 +23,10 @@
   <a href="#for-developers"><b>For developers</b></a>
 </p>
 
+<p align="center">
+  <a href="docs/screenshots/hero.png"><img src="docs/screenshots/hero.png" alt="Fire Remote on Android: touchpad, remote and settings" width="900"></a>
+</p>
+
 Fire Remote talks to the Stick directly through Android's debugging bridge (ADB). It drives [scrcpy-server](https://github.com/Genymobile/scrcpy) on the TV with video turned off, so every key press arrives instantly. It can also plug a virtual mouse into the Stick, so websites and apps built for touch finally work with a cursor.
 
 There are two apps, and you can use either or both:
@@ -46,10 +50,14 @@ There are two apps, and you can use either or both:
 - **D-pad swipe** (phone). Slide anywhere on the D-pad to move, like the Amazon app. Longer slides move further, and resting your finger keeps it going.
 - **Typing.** Anything you type or dictate on the phone shows up on the TV as you type, and Send presses Enter. On the laptop, press `T` to type or `Ctrl+V` to paste.
 
+<p align="center"><img src="docs/screenshots/phone-remote.png" alt="Phone remote" width="250"> &nbsp; <img src="docs/screenshots/phone-typing.png" alt="Typing on the TV, with a smaller interface size" width="250"></p>
+
 ### A real mouse on the TV
 - **Phone touchpad.** One finger moves the cursor and a tap clicks. Two fingers scroll, and a two-finger tap goes Back. You can change the speed and turn natural scrolling on or off.
 - **Laptop mouse.** Click the Mouse button, or press `Ctrl+Alt+M` from any window. Then click the small scrcpy window, and your laptop's mouse drives the cursor on the TV. Alt gives the mouse back.
 - **How it works.** Both apps plug a virtual USB mouse (UHID) into the Stick, so the TV draws its own real cursor, not a simulation.
+
+<p align="center"><img src="docs/screenshots/phone-touchpad.png" alt="Touchpad" width="250"></p>
 
 ### Your apps, with their real logos
 - **Apps list.** See every app installed on the TV and launch any of them, including sideloaded ones.
@@ -57,11 +65,15 @@ There are two apps, and you can use either or both:
 - **Favorites row.** Pin up to 6 apps or websites. On the phone, the tiles stretch to fill the row.
 - **Website tiles.** Open a site straight in [Sofa TV Browser](https://github.com/sonalder-darlene/sofa-tv-browser), for example YouTube on TV, a streaming site or a dashboard.
 
+<p align="center"><img src="docs/screenshots/phone-apps.png" alt="Apps on the TV, with their real logos" width="330"></p>
+
 ### Make the remote yours (phone)
 - **Every button is configurable.** Give any button another action, such as Touchpad, Apps, Search, close the app on the TV or see the TV screen, or hide it entirely.
 - **Sizes.** Adjust the button size and the whole interface size.
 - **Look and language.** The theme follows the phone or is set to dark or light. Languages are English, French, Arabic (right-to-left), German and Spanish.
 - **Phone volume buttons** control the TV while the app is open.
+
+<p align="center"><img src="docs/screenshots/phone-settings.png" alt="Settings: appearance and connection" width="195"> &nbsp; <img src="docs/screenshots/phone-controls.png" alt="Settings: controls and buttons" width="195"> &nbsp; <img src="docs/screenshots/phone-buttons.png" alt="Button map: tap a button to change or hide it" width="195"> &nbsp; <img src="docs/screenshots/phone-actions.png" alt="Actions a button can take" width="195"></p>
 
 ### Stays connected
 - **Background connection** (phone). A foreground service keeps the connection open while you switch apps. Its notification has Play/pause, Back and Disconnect.
@@ -73,6 +85,8 @@ There are two apps, and you can use either or both:
 - **Close the TV app.** Force-closes whatever is in the foreground.
 - **Power button.** Puts the Stick to sleep or wakes it. On TVs with HDMI-CEC, sleeping the Stick usually turns the TV off too.
 - **Remote buttons.** Change what the Fire TV remote's own Netflix, Prime Video, YouTube, Disney+ and TV buttons do: Last app, Sleep, any app or a link. This needs the FireKeys companion app on the Stick, which isn't part of this repo.
+
+<p align="center"><img src="docs/screenshots/phone-firekeys.png" alt="Remote buttons, saved on the TV through FireKeys" width="250"> &nbsp; <img src="docs/screenshots/phone-firekeys-pick.png" alt="Choosing what the TV button does" width="250"></p>
 
 ### Laptop app
 
