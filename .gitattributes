@@ -1,0 +1,8 @@
+# Keep files byte-for-byte as committed; Windows scripts need CRLF, gradlew needs LF.
+* -text
+*.cmd eol=crlf
+*.bat eol=crlf
+android/gradlew eol=lf
+*.jar binary
+*.ico binary
+android/app/src/main/assets/scrcpy-server binary

@@ -1,0 +1,25 @@
+# Signing keys and their passwords: never commit
+*.jks
+*.keystore
+keystore.properties
+android/signing/
+
+# Android / Gradle
+android/local.properties
+android/.gradle/
+android/.kotlin/
+android/build/
+android/app/build/
+android/tvhelper/out/
+*.apk
+*.aab
+.idea/
+*.iml
+
+# Desktop build output
+desktop/*.exe
+desktop/*.pdb
+
+# OS
+.DS_Store
+Thumbs.db
